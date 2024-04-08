@@ -1,0 +1,8 @@
+/.env
+.npmignore
+/.idea/JetClient/state.xml
+/.idea/.gitignore
+/.idea/jsLibraryMappings.xml
+/.idea/modules.xml
+/.idea/tej-env.iml
+/.idea/vcs.xml

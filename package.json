@@ -1,0 +1,28 @@
+{
+  "name": "tej-env",
+  "version": "1.0.0",
+  "description": "A package to load & update environment variables from .env file. Supports runtime updates for Express.js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hirakchhatbar/tej-env.git"
+  },
+  "keywords": [
+    "dotenv",
+    "env",
+    ".env",
+    "environment",
+    "variables",
+    "config",
+    "settings",
+    "global variables",
+    "global config"
+  ],
+  "readmeFilename": "README.md",
+  "author": "Hirak Chhatbar",
+  "license": "ISC"
+}
