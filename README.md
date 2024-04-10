@@ -16,9 +16,13 @@ npm install tej-env
 ## 🧑🏻‍💻 Usage
 ```js
 import { env, setEnv, unsetEnv} from 'tej-env'
+// or if you don't want to use any of these methods, just do
+import "tej-env"
 
 // To read an environment variable:
 const data = env("YOUR_ENV_VARIABLE");
+//or
+const data = process.env.YOUR_ENV_VARIABLE;
 
 // To set an environment variable:
 setEnv(key, value);
