@@ -1,51 +1,22 @@
-import envFile from './helper/env-file.js';
-import fs from "fs";
-import toObj from "./helper/to-obj.js";
+import TejEnv from "./lib/tej-env.js";
 
-class TejEnv {
-    constructor() {
-        if (TejEnv.instance) {
-            return TejEnv.instance;
-        }
+const tejEnv = new TejEnv();
+tejEnv.init("utf-8");
 
-        this.envFile = envFile();
-        this.data = {};
-
-        TejEnv.instance = this;
-    }
-
-    init(encoding) {
-        this.encoding = encoding;
-
-        if (fs.existsSync(this.envFile)) {
-            this.envContent = fs.readFileSync(this.envFile, this.encoding);
-        }
-
-        this.envData = toObj(this.envContent);
-
-        for (const e in this.envData) {
-            this.data[e] = this.envData[e];
-            process.env[e] = this.data[e];
-        }
-    }
-
-    get(key) {
-        return this.data[key];
-    }
-
-    set(key, value) {
-        this.data[key] = value;
-        process.env[key] = value;
-    }
-
-    unset(key) {
-        delete this.data[key];
-        delete process.env[key];
-    }
-
-    withExpress(req, res, next) {
-        console.log('withExpress');
-    }
+const env = (key) => {
+    return tejEnv.env(key);
 }
 
-export default new TejEnv();
+const setEnv = (key, value) => {
+    tejEnv.set(key, value);
+}
+
+const unsetEnv = (key) => {
+    tejEnv.unset(key);
+}
+
+export {
+    env,
+    setEnv,
+    unsetEnv
+}
