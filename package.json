@@ -1,6 +1,6 @@
 {
   "name": "tej-env",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A package to load & update environment variables from .env file. Supports runtime updates for Express.js",
   "main": "index.js",
   "type": "module",
