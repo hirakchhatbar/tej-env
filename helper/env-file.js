@@ -7,6 +7,8 @@ const defaultEnv = () => {
 
 const envFile = () => {
     const node_env = process.env.NODE_ENV;
+    if (!node_env) defaultEnv();
+
     if (node_env === "development") {
         //Check if .env.development exists
         if (fs.existsSync(".env.development")) return ".env.development";

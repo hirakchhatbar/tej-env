@@ -8,10 +8,12 @@ A zero-dependency module to load environment variables in your Nodejs project.
 - Ability to set environment variables to access them anytime anywhere within that application session. (This doesn't update .env file)
 -  [UPCOMING] - Optionally .env file on the go
 
+
 ## 🛠️ Install Dependencies
 ```bash
 npm install tej-env
 ```
+
 
 ## 🧑🏻‍💻 Usage
 ```js
@@ -31,16 +33,20 @@ setEnv(key, value);
 unsetEnv(key);
 ```
 
+
 ## 🍰 Contributing
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
 
 
 ## ❤️ Support
 A simple star to this project repo is enough to keep me motivated on this project for days. If you find your self very much excited with this project let me know with a star.
 
+
 ## 🙇 Author
 #### Hirak Chhatbar
 - Github: [@hirakchhatbar](https://github.com/hirakchhatbar)
+
 
 ## ➤ License
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
