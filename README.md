@@ -8,6 +8,7 @@ A zero-dependency module to load environment variables in your Nodejs project.
 - Ability to set environment variables to access them anytime anywhere within that application session. (This doesn't update .env file)
 -  [UPCOMING] - Optionally update .env file on the go with in-built routes for express.js and te.js
 
+<br>
 
 ## 🛠️ Install
 ```bash
