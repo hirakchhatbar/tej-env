@@ -24,8 +24,5 @@
   ],
   "readmeFilename": "README.md",
   "author": "Hirak Chhatbar",
-  "license": "ISC",
-  "dependencies": {
-    "crypto": "^1.0.1"
-  }
+  "license": "ISC"
 }
